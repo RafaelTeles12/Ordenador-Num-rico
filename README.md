@@ -1,2 +1,2 @@
 # Ordenador-Numerico
-Ordenador de lista com algoritmos de ordenação integrados, gerador de lista e avaliação de performance.
+Ordenador de lista com algoritmos de classificação integrados, gerador de lista e avaliação de performance.
