@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+//Função Ordenação por Seleção
 void selectionSort(int num[], int tam) { 
   int i, j, min, aux;
   for (i = 0; i < (tam-1); i++) 
@@ -20,6 +21,7 @@ void selectionSort(int num[], int tam) {
   }
 }
 
+//Função Ordenação por Inserção
 void insertionSort(int arr[], int size){
   int i, j, key;
   for (i = 1; i < size; i++) {
@@ -33,6 +35,7 @@ void insertionSort(int arr[], int size){
   }
 }
 
+//Função Ordenação por método Radix
 void radixSort(int vetor[], int tamanho) {
   
   int i;
@@ -63,10 +66,12 @@ void radixSort(int vetor[], int tamanho) {
   free(b);
 }
 
+//Declaração das variáveis globais
 int*lista;
 int tam;
 clock_t t;
 
+//Função execução e escolha do método de ordenação + tempo de execução
 int exec(void){
   
   int opcao=0;
@@ -130,6 +135,7 @@ int exec(void){
   return(opcao);
 }
 
+//Função criação de lista manual
 void listaManual(void){
   
   system("clear");
@@ -151,6 +157,7 @@ void listaManual(void){
   exec();
 }
 
+//Função criação de lista aleatória
 void listaAleatoria(void){
 
   system("clear");
@@ -195,6 +202,7 @@ void listaAleatoria(void){
   exec();
 }
 
+//Função Menu Principal/Inicial
 int menuPrincipal(void){
 
   int opcao=0;
